@@ -1,0 +1,5 @@
+GPT-5.4 é um modelo recente da OpenAI, lançado em 5 de março de 2026, com foco em trabalho profissional mais complexo. Segundo a OpenAI, ele reúne avanços em raciocínio, programação e fluxos de trabalho com agentes em um único modelo, buscando entregar respostas mais precisas, úteis e com menos idas e vindas.
+
+Na prática, o GPT-5.4 foi projetado para lidar melhor com tarefas como análise de documentos, criação e edição de planilhas, produção de apresentações, uso de ferramentas externas e execução de etapas mais longas em ambientes de software. A OpenAI também destaca que ele traz capacidades nativas de computer use, permitindo que agentes operem aplicações e executem fluxos de trabalho mais completos.
+
+Outro ponto importante é a eficiência. A empresa afirma que o GPT-5.4 usa menos tokens do que versões anteriores para resolver problemas semelhantes, o que pode reduzir custo e tempo de resposta. No ecossistema da OpenAI, ele aparece como um modelo forte para ChatGPT, API e Codex, com suporte a entradas de texto e imagem e saída em texto.
