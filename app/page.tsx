@@ -27,6 +27,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SpotlightCard } from "@/components/spotlight-card";
 import { siteConfig } from "@/lib/site-config";
 import { createWhatsappLink, getSiteUrl } from "@/lib/utils";
+import { Globe } from "@/components/globe";
 
 const serviceIcons = {
   automation: Brain,
@@ -268,23 +269,28 @@ export default function HomePage() {
             />
           </AnimatedSection>
 
-          <div className="grid gap-5 lg:grid-cols-4">
-            {siteConfig.method.map((item, index) => (
-              <AnimatedSection key={item.step} delay={0.08 * index}>
-                <SpotlightCard className="h-full px-5 py-6 sm:px-6">
-                  <div className="space-y-6">
-                    <div className="flex items-center justify-between gap-4">
-                      <span className="font-display text-4xl text-white/90">{item.step}</span>
-                      <span className="h-px flex-1 bg-[linear-gradient(90deg,rgba(255,255,255,0.25),transparent)]" />
-                    </div>
-                    <div className="space-y-3">
-                      <h3 className="font-display text-2xl text-white">{item.title}</h3>
-                      <p className="text-sm leading-7 text-white/68">{item.description}</p>
-                    </div>
-                  </div>
-                </SpotlightCard>
-              </AnimatedSection>
-            ))}
+          <div className="relative">
+             <div className="absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 w-full max-w-[600px] opacity-40 pointer-events-none">
+                <Globe />
+             </div>
+             <div className="grid gap-5 lg:grid-cols-4">
+               {siteConfig.method.map((item, index) => (
+                 <AnimatedSection key={item.step} delay={0.08 * index}>
+                   <SpotlightCard className="h-full px-5 py-6 sm:px-6">
+                     <div className="space-y-6">
+                       <div className="flex items-center justify-between gap-4">
+                         <span className="font-display text-4xl text-white/90">{item.step}</span>
+                         <span className="h-px flex-1 bg-[linear-gradient(90deg,rgba(255,255,255,0.25),transparent)]" />
+                       </div>
+                       <div className="space-y-3">
+                         <h3 className="font-display text-2xl text-white">{item.title}</h3>
+                         <p className="text-sm leading-7 text-white/68">{item.description}</p>
+                       </div>
+                     </div>
+                   </SpotlightCard>
+                 </AnimatedSection>
+               ))}
+             </div>
           </div>
         </section>
 
@@ -507,6 +513,9 @@ export default function HomePage() {
           <p className="text-sm text-white/42">{"\u00a9 " + new Date().getFullYear() + " Gorilla Labs. Todos os direitos reservados."}</p>
         </div>
       </footer>
+      <div className="gradient-blur-bottom">
+        <div></div><div></div><div></div><div></div><div></div><div></div>
+      </div>
     </>
   );
 }

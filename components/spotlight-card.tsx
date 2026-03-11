@@ -30,7 +30,7 @@ export function SpotlightCard({
   return (
     <div
       className={cn(
-        "card-glow group relative isolate overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.04] shadow-[0_18px_80px_rgba(4,1,15,0.45)] backdrop-blur-xl transition-[border-color,background-color,transform] duration-300 hover:border-fuchsia-300/20 hover:bg-white/[0.05]",
+        "card-glow border-gradient group relative isolate overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.04] shadow-[0_18px_80px_rgba(4,1,15,0.45)] backdrop-blur-xl transition-[border-color,background-color,transform] duration-300 hover:bg-white/[0.05]",
         highlight && "card-glow-strong",
         className,
       )}
